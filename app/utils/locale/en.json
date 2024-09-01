@@ -1,0 +1,21 @@
+{
+  "translation": {
+    "titles": {
+      "lt": "LT",
+      "en": "EN"
+    },
+    "labels": {
+      "email": "Email",
+      "password": "Password"
+    },
+    "buttons": {
+      "login": "Log in",
+      "logout": "Logout"
+    },
+    "errorMessages": {
+      "emailIsRequired": "Email is required",
+      "emailIsInvalid": "Invalid email format",
+      "passwordIsRequired": "Password is required"
+    }
+  }
+}

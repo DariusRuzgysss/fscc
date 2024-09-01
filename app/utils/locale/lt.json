@@ -1,0 +1,21 @@
+{
+  "translation": {
+    "titles": {
+      "lt": "LT",
+      "en": "EN"
+    },
+    "labels": {
+      "email": "El. paštas",
+      "password": "Slaptažodis"
+    },
+    "buttons": {
+      "login": "Prisijungti",
+      "logout": "Atsijungti"
+    },
+    "errorMessages": {
+      "emailIsRequired": "El. paštas yra privalomas",
+      "emailIsInvalid": "Neteisingas el. pašto formatas",
+      "passwordIsRequired": "Slaptažodis yra privalomas"
+    }
+  }
+}
