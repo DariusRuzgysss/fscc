@@ -50,7 +50,6 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
   }, []);
 
   const handleSetAuth = useCallback(async (authObject: Auth | null) => {
-    console.log('authObject', authObject);
     setAuth(authObject);
     if (authObject === null) {
       await AsyncStorage.removeItem('auth');
@@ -65,7 +64,6 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
   }, []);
 
   const handleSetEmail = useCallback(async (emailVal: string) => {
-    console.log('emailVal', emailVal);
     setEmail(emailVal);
     await AsyncStorage.setItem('email', emailVal);
   }, []);

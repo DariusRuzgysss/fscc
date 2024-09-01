@@ -2,7 +2,6 @@
 export {default as LithuanianFlag} from './icons/lithuanian_flag.png';
 export {default as EnglandFlag} from './icons/LanguageEnglish.png';
 export {default as Eye} from './icons/password_visible.png';
-export {default as EyeOff} from './icons/Eye_off.png';
 export {default as PasswordHidden} from './icons/password_hidden.png';
 export {default as PasswordVisible} from './icons/password_visible.png';
 export {default as ChevronDown} from './icons/chevron_down.png';

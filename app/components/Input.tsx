@@ -1,5 +1,5 @@
-import {palette} from '@utils/styles';
-import {Eye, EyeOff} from 'assets';
+import {fonts, palette} from '@utils/styles';
+import {Eye} from 'assets';
 import React, {memo, useCallback, useMemo, useState} from 'react';
 
 //Libraries
@@ -45,22 +45,21 @@ export default memo(({name, placeHolderText, secureTextEntry}: Props) => {
             secureTextEntry={passwordVisible}
             mode="outlined"
             style={styles.input}
+            outlineStyle={styles.outlineStyle}
             placeholderTextColor={palette.darkGrey}
+            textColor={palette.primaryText}
             theme={{
               colors: {
-                primary: palette.border,
+                primary: palette.darkGrey,
                 placeholder: palette.darkGrey,
                 text: palette.primary,
                 background: palette.white,
+                onSurfaceVariant: palette.darkGrey,
               },
-              roundness: 6,
             }}
             right={
               secureTextEntry && (
-                <TextInput.Icon
-                  icon={passwordVisible ? Eye : EyeOff}
-                  onPress={togglePasswordVisibility}
-                />
+                <TextInput.Icon icon={Eye} onPress={togglePasswordVisibility} />
               )
             }
           />
@@ -79,6 +78,12 @@ export default memo(({name, placeHolderText, secureTextEntry}: Props) => {
 const styles = StyleSheet.create({
   input: {
     height: 48,
+    fontFamily: fonts.Inter_Medium_500,
+  },
+  outlineStyle: {
+    color: palette.darkGrey,
+    borderColor: palette.border,
+    borderRadius: 6,
   },
   errorView: {
     marginTop: 5,
